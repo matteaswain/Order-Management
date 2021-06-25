@@ -7,6 +7,10 @@ import { CustomerEditComponent } from './customer/customer-edit/customer-edit.co
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 
 import { E404Component } from './misc/e404/e404.component';
+import { SalespersonCreateComponent } from './salesperson/salesperson-create/salesperson-create.component';
+import { SalespersonDetailComponent } from './salesperson/salesperson-detail/salesperson-detail.component';
+import { SalespersonEditComponent } from './salesperson/salesperson-edit/salesperson-edit.component';
+import { SalespersonListComponent } from './salesperson/salesperson-list/salesperson-list.component';
 
 const routes: Routes = 
 [
@@ -16,6 +20,16 @@ const routes: Routes =
   {path: 'customer/detail/:id', component: CustomerDetailComponent},
   {path: 'customer/create', component: CustomerCreateComponent},
   {path: 'customer/edit/:id', component: CustomerEditComponent},
+
+  {path: 'salesperson/list', component: SalespersonListComponent},
+  {path: 'salesperson/detail/:id', component: SalespersonDetailComponent},
+  {path: 'salesperson/create', component: SalespersonCreateComponent},
+  {path: 'salesperson/edit/:id', component: SalespersonEditComponent},
+
+
+
+
+
 
   {path: '**', component: E404Component }
 
