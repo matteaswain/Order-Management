@@ -1,0 +1,49 @@
+<div id="component">
+    <div id="component-header">
+        <a routerLink="/customer/create">Create</a>
+    </div>
+
+    <table [ngClass]="tableWidth">
+    <thead>
+
+        <tr>
+            <th>Id</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Is National</th>
+            <th>Sales</th>
+            <th>Created</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let c of customers">
+            <td>{{c.id}}</td>
+            <td>{{c.code}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.isNational ? "Y" : "N"}}</td>
+            <td>{{c.sales}}</td>
+            <td>{{c.created | date: 'shortDate'}}</td>
+            
+            <td>
+                <span>
+                    <a routerLink="/customer/detail/{{c.id}}">Detail</a>
+                </span>
+                <span>  |  </span>
+                <span>
+                    <a routerLink="/customer/edit/{{c.id}}">Edit</a>
+                </span>
+            </td>
+
+
+
+        </tr>
+        
+    </tbody>
+    
+    </table>
+
+
+</div>
+
