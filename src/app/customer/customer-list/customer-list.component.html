@@ -24,7 +24,7 @@
             <td>{{c.code}}</td>
             <td>{{c.name}}</td>
             <td>{{c.isNational ? "Y" : "N"}}</td>
-            <td>{{c.sales}}</td>
+            <td>{{c.sales | currency}}  </td>
             <td>{{c.created | date: 'shortDate'}}</td>
             
             <td>

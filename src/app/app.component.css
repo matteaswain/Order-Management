@@ -1,3 +1,11 @@
-/* tables{
-    class : "table table-striped"
+ /* #tables{
+  table-sm
 } */
+
+th {
+    width: 14%;
+}
+table{
+    
+    width: 14%
+}

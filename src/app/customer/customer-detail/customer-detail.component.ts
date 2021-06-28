@@ -10,6 +10,7 @@ import { CustomerService } from '../customer.service';
 })
 export class CustomerDetailComponent implements OnInit {
   cust !: Customer;
+  
   constructor(
     private custsvc : CustomerService,
     private activatedRoute : ActivatedRoute
