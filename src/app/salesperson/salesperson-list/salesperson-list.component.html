@@ -1,16 +1,19 @@
-<table>
-    <thead>
+<app-menu></app-menu>
+<div>
 
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>State</th>
-            <th>Sales</th>
-            <th>Actions</th>
+    <table>
+        <thead>
+            
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>State</th>
+                <th>Sales</th>
+                <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-
+        
         <tr *ngFor="let s of salespeople">
             <td>{{s.id}}</td>
             <td>{{s.name}}</td>
@@ -26,9 +29,11 @@
                     <a routerLink="/salesperson/edit/{{s.id}}">Edit</a>
                 </span>
             </td>
-
+            
         </tr>
         
     </tbody>
     
-    </table>
+</table>
+
+</div>

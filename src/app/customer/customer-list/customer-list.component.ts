@@ -10,7 +10,7 @@ import { CustomerService } from '../customer.service';
 export class CustomerListComponent implements OnInit {
 
   customers: Customer[] = [];
-  tableWidth: string = "table table-striped"
+  tableWidth: string = "table table-striped" ;
 
   constructor
   (

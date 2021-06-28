@@ -1,4 +1,7 @@
 ul, li{
     display: inline-block;
     list-style: none;
+    width: 30%;
+    margin-left: 10px;
+    
 }
