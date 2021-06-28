@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-component{
+/* component{
     margin: 10%;
+} */
+
+body{
+    background-color: rgb(255, 248, 248);
+}
+
+button.btn{
+    font-weight: bold;
+    background-color: rgb(255, 248, 248);
 }

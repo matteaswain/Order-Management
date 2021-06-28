@@ -1,20 +1,21 @@
 <app-menu></app-menu>
 <div>
-
-    <table>
+    <a routerLink="/salesperson/create" style="margin-left: 20px;">Create</a>
+    <input [(ngModel)]="searchCriteria" type="text" placeholder="Search" style="margin-left: 25px;">
+    <table [ngClass]="tableWidth">
         <thead>
             
             <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>State</th>
-                <th>Sales</th>
-                <th>Actions</th>
+                <th><button (click)="sortFn('id')" class="btn btn-light">Id</button></th>
+                <th><button (click)="sortFn('name')" class="btn btn-light">Name</button></th>
+                <th><button (click)="sortFn('stateCode')" class="btn btn-light">State Code</button></th>
+                <th><button (click)="sortFn('name')" class="btn btn-light">Sales</button></th>
+                <th><button class="btn btn-light">Actions</button></th>
         </tr>
     </thead>
     <tbody>
         
-        <tr *ngFor="let s of salespeople">
+        <tr *ngFor="let s of salespeople | searchSalesperson: searchCriteria | sort:sortColumn:sortAsc ">
             <td>{{s.id}}</td>
             <td>{{s.name}}</td>
             <td>{{s.stateCode}}</td>

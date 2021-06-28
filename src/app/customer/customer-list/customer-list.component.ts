@@ -10,9 +10,12 @@ import { CustomerService } from '../customer.service';
 export class CustomerListComponent implements OnInit {
 
   tableWidth: string = "table table-striped" ;
+  
   customers: Customer[] = [];
   sortColumn: string = "id";
   sortAsc: boolean = true;
+
+  searchCriteria: string = "";
 
   sortFn(column:string): void
   {

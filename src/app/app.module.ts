@@ -16,6 +16,8 @@ import { SalespersonDetailComponent } from './salesperson/salesperson-detail/sal
 import { SalespersonCreateComponent } from './salesperson/salesperson-create/salesperson-create.component';
 import { SalespersonEditComponent } from './salesperson/salesperson-edit/salesperson-edit.component';
 import { SortPipe } from './misc/sort.pipe';
+import { SearchCustomerPipe } from './customer/search-customer.pipe';
+import { SearchSalespersonPipe } from './salesperson/search-salesperson.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { SortPipe } from './misc/sort.pipe';
     SalespersonDetailComponent,
     SalespersonCreateComponent,
     SalespersonEditComponent,
-    SortPipe
+    SortPipe,
+    SearchCustomerPipe,
+    SearchSalespersonPipe
   ],
   imports: [
     BrowserModule,

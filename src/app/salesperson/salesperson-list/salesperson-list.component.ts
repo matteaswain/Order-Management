@@ -8,8 +8,25 @@ import { SalespersonService } from '../salesperson.service';
   styleUrls: ['./salesperson-list.component.css']
 })
 export class SalespersonListComponent implements OnInit {
+  
+  tableWidth: string = "table table-striped" ;
 
   salespeople: Salesperson[] = [];
+  sortColumn: string = "id";
+  sortAsc: boolean = true;
+
+  searchCriteria: string = "";
+
+  sortFn(column:string): void
+  {
+    if(column == this.sortColumn)
+    {
+      this.sortAsc = !this.sortAsc;
+      return;
+    }
+    this.sortColumn = column;
+    this.sortAsc = true;
+  }
 
   constructor
   (
