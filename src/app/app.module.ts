@@ -19,6 +19,7 @@ import { SortPipe } from './misc/sort.pipe';
 import { SearchCustomerPipe } from './customer/search-customer.pipe';
 import { SearchSalespersonPipe } from './salesperson/search-salesperson.pipe';
 import { LoginComponent } from './salesperson/login/login.component';
+import { OrderCreateComponent } from './order/order-create/order-create.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoginComponent } from './salesperson/login/login.component';
     SortPipe,
     SearchCustomerPipe,
     SearchSalespersonPipe,
-    LoginComponent
+    LoginComponent,
+    OrderCreateComponent
   ],
   imports: [
     BrowserModule,
