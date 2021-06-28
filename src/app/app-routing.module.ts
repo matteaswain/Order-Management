@@ -11,10 +11,11 @@ import { SalespersonCreateComponent } from './salesperson/salesperson-create/sal
 import { SalespersonDetailComponent } from './salesperson/salesperson-detail/salesperson-detail.component';
 import { SalespersonEditComponent } from './salesperson/salesperson-edit/salesperson-edit.component';
 import { SalespersonListComponent } from './salesperson/salesperson-list/salesperson-list.component';
+import { LoginComponent } from './salesperson/login/login.component';
 
 const routes: Routes = 
 [
-  {path: '', redirectTo:'/customer/list', pathMatch: 'full'},
+  {path: '', redirectTo:'/login', pathMatch: 'full'},
 
   {path: 'customer/list', component: CustomerListComponent},
   {path: 'customer/detail/:id', component: CustomerDetailComponent},
@@ -27,7 +28,7 @@ const routes: Routes =
   {path: 'salesperson/edit/:id', component: SalespersonEditComponent},
 
 
-
+  {path: 'login', component: LoginComponent},
 
 
 

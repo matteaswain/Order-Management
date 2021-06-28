@@ -18,6 +18,7 @@ import { SalespersonEditComponent } from './salesperson/salesperson-edit/salespe
 import { SortPipe } from './misc/sort.pipe';
 import { SearchCustomerPipe } from './customer/search-customer.pipe';
 import { SearchSalespersonPipe } from './salesperson/search-salesperson.pipe';
+import { LoginComponent } from './salesperson/login/login.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SearchSalespersonPipe } from './salesperson/search-salesperson.pipe';
     SalespersonEditComponent,
     SortPipe,
     SearchCustomerPipe,
-    SearchSalespersonPipe
+    SearchSalespersonPipe,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
