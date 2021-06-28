@@ -8,8 +8,8 @@
     <thead>
 
         <tr>
-            <th>Id</th>
-            <th>Code</th>
+            <th><button (click)="sortFn('id')" class="btn btn-light">Id</button></th>
+            <th><button (click)="sortFn('code')" class="btn btn-light">Code</button></th>
             <th>Name</th>
             <th>Is National</th>
             <th>Sales</th>
@@ -19,7 +19,7 @@
     </thead>
     <tbody>
 
-        <tr *ngFor="let c of customers">
+        <tr *ngFor="let c of customers | sort:sortColumn:sortAsc">
             <td>{{c.id}}</td>
             <td>{{c.code}}</td>
             <td>{{c.name}}</td>
