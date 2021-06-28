@@ -13,6 +13,8 @@ import { SalespersonEditComponent } from './salesperson/salesperson-edit/salespe
 import { SalespersonListComponent } from './salesperson/salesperson-list/salesperson-list.component';
 import { LoginComponent } from './salesperson/login/login.component';
 
+import { OrderCreateComponent } from './order/order-create/order-create.component';
+
 const routes: Routes = 
 [
   {path: '', redirectTo:'/login', pathMatch: 'full'},
@@ -28,6 +30,8 @@ const routes: Routes =
   {path: 'salesperson/edit/:id', component: SalespersonEditComponent},
 
 
+  {path: 'order/create', component:OrderCreateComponent},
+  
   {path: 'login', component: LoginComponent},
 
 

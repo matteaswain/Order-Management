@@ -1,1 +1,26 @@
-<p>order-create works!</p>
+<div>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td><input [(ngModel)]="order.id" type="number" disabled>  </td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><input [(ngModel)]="order.description" type="text">  </td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td><input [(ngModel)]="order.status" type="text" disabled>  </td>
+        </tr>
+        <tr>
+           <td>Customer</td>
+            <td>
+               <!-- select has to point to fk of all the data want options for  -->
+                <select [(ngModel)]="order.customerId">
+                    <option *ngFor="let c of customers" value={{c.id}}>{{c.name}}</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+    <button (click)="save()" class="btn btn-primary">Save</button>
+</div>
